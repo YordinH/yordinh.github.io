@@ -1,0 +1,30 @@
+img {
+    max-width: 800px;
+    
+}
+header {
+    padding:20px;
+    text-align: center;
+    font-size: large;
+}
+main {
+    background-color: darkgray;
+    padding:20px;
+    color:white;
+}
+a {
+    padding:0;
+}
+header, footer {
+    width:100%;
+    background-color: white;
+    height: auto;
+    text-align: center;
+}
+
+header, body, footer {
+    margin:0;
+    font-family:'Times New Roman', Times, serif;
+    margin: auto, 0;
+    max-width: 100%;
+}

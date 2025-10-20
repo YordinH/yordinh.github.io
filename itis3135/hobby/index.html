@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hobby Site</title>
+    <script src="./scripts/validator.js"></script>
+    <!-- https://coolors.co/ebd4cb-da9f93-b6465f-890620-2c0703 -->
+    <style>
+        header, body, footer {
+            color: white;
+            margin:auto, 0;
+            margin:0;
+            max-width: 100%;
+            border:none;
+            left:0;
+            width:100%;
+            display:flex;
+            flex-direction:column;
+            font-family: 'Poppins', sans-serif;
+        }
+        header {
+            background-color: #B6465F;
+            color: #EBD4CB;
+            padding:15px;
+        }
+        body {
+            background-color: #EBD4CB;
+            color: #2C0703;
+        }
+        main {
+            text-align: center;
+        }
+        footer {
+            background-color: #890620;
+            color: #EBD4CB;
+            bottom:0;
+        }
+        footer a {
+            color: #EBD4CB;
+        }
+        header, footer {
+            height: auto;
+            text-align: center;
+        }
+        a:visited {
+            color:#EBD4CB;
+        }
+        a:link {
+            color:#EBD4CB;
+        }
+        h1 {
+            margin: 0;
+            font-size: 2em;
+        }
+        .links {
+            display:flex;
+            gap:20px;
+            justify-content: center;
+        }
+        section {
+            display: none;
+            max-width: 800px;
+            margin: auto;
+        }
+
+        figure {
+            margin: 20px auto;
+        }
+
+        figcaption {
+            font-style: italic;
+            color: #B6465F;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Travel</h1>
+        <div class="links">
+            <a href="#" data-section="who">Who</a>
+            •
+            <a href="#" data-section="what">What</a>
+            •
+            <a href="#" data-section="when">When</a>
+            •
+            <a href="#" data-section="where">Where</a>
+            •
+            <a href="#" data-section="how">How</a>
+            •
+            <a href="#" data-section="why">Why</a>
+            •
+            <a href="#" data-section="ai">AI Prompts</a>
+        </div>
+    </header>
+    <main>
+        <section id="what" class="active">
+            <h2>What type of traveling do I do?</h2>
+            <p>Most of my trips are for leisure or exploring new cities, relaxing, and experiencing new places at my own pace. I love discovering local food, sights, and hidden gems wherever I go, whether it’s a quick weekend getaway or a longer adventure.</p>
+            <p>Sometimes, I travel to visit family. These trips are special because they let me reconnect with loved ones while still getting the chance to explore somewhere new.</p>
+            <figure>
+                <img src="./images/dc.png" alt="Washington monument at night" width="400">
+                <figcaption>Picture of the Washington Monument at night</figcaption>
+            </figure>
+        </section>
+
+        <section id="who" >
+            <h2>About Me</h2>
+            <p>I’m someone who’s always been curious about the world. Traveling lets me experience different places, people, and ways of life. Every trip teaches me something new and gives me a deeper appreciation for the world.</p>
+            <p>Traveling also helps me relax and recharge, making it easier to face everyday challenges with a fresh perspective.</p>
+            <figure>
+                <img src="./images/car.png" alt="car in the country" width="400">
+                <figcaption>Car I currently use to travel</figcaption>
+            </figure>
+        </section>
+
+        <section id="when">
+            <h2>The best times to travel</h2>
+            <p>I usually travel during school breaks or weekends because that’s when I have the most free time to really enjoy the trip without any stress.</p>
+            <p>Many of my trips are pretty spontaneous, often planned last minute when I find a free weekend or stumble upon a good travel deal.</p>
+            <figure>
+                <img src="./images/miami.png" alt="Buildings in miami" width="400">
+                <figcaption>View from Miami Airbnb</figcaption>
+            </figure>
+            
+        </section>
+
+        <section id="where">
+            <h2>Where I have traveled/want to travel</h2>
+            <p>I’ve been lucky enough to visit some major places like LAX, DFW, NYC, DXB, MIA, PHI, and ATL. I’ve also spent a lot of time exploring much of the East Coast, discovering different cities and what makes each one unique.</p>
+            <p>I hope to keep expanding that list as time goes on. It’s always exciting to see how different each city feels, and I enjoy picking up on the little things that make every place special when I travel.</p>
+            <figure>
+                <img src="./images/beach.png" alt="photo of coast from helicopter" width="400">
+                <figcaption>Getting the birds eye view of the beach</figcaption>
+            </figure>
+        </section>
+
+        <section id="how">
+            <h2>How do I get there</h2>
+            <p>I usually prefer to drive because it gives me the freedom to go wherever I want and enjoy the scenery along the way.</p>
+            <p>I’ve also taken Amtrak and flown for longer trips, and each mode of travel has its own kind of adventure.</p>
+            <figure>
+                <img src="./images/newyork2.png" alt="photo of nyc from car" width="400">
+                <figcaption>Entering Times Square</figcaption>
+            </figure>
+        </section>
+
+        <section id="why">
+            <h2>Why do I like traveling so much?</h2>
+            <p>I love traveling because it gives me a real sense of freedom and helps me see life from new perspectives. Being in new places makes me feel more alive and inspired, like the world is full of endless possibilities waiting to be explored.</p>
+            <p>Travel also helps me grow as a person. It teaches me to adapt to different situations and appreciate the variety of lifestyles and cultures out there. Each trip is a chance to learn something new about the world and myself.</p>
+            <figure>
+                <img src="./images/uae.png" alt="Ferris Wheel in the UAE" width="400">
+                <figcaption>View of the world's largest ferris wheel</figcaption>
+            </figure>
+        </section>
+
+        <section id="ai">
+            <h2>AI Prompts</h2>
+            <p><strong>Model:</strong> ChatGPT</p>
+                <ul>
+                <li>Used ChatGPT to help write section text.</li>
+                <li>Also used ChatGPT to help with creating script to switch between sections.</li>
+                </ul>
+        </section>
+    </main>
+    <footer>
+        <h6>Page built by: <a href="../yh.design/index.html">YHDesign ©2025</a></h6>
+    </footer>
+
+    <script>
+        const links = document.querySelectorAll(".links a");
+        const sections = document.querySelectorAll("main section");
+
+        function showSection(id) {
+            sections.forEach((sec) => sec.style.display = "none");
+            document.getElementById(id).style.display = "block";
+        }
+
+        links.forEach((link) => {
+            link.addEventListener("click", (e) => {
+            e.preventDefault();
+            const id = link.getAttribute("data-section");
+            showSection(id);
+            });
+        });
+
+        showSection("what");
+</script>
+</body>
+</html>

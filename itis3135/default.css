@@ -81,3 +81,47 @@ tr:hover {
         font-size: 0.9em;
     }
 }
+
+#introForm {
+    display: flex;
+    flex-direction: column;
+    gap: 12px; /* space between rows */
+}
+
+#introForm fieldset {
+    padding: 15px;
+    margin-bottom: 12px;
+    border: 1px solid #ccc;
+}
+
+#introForm label {
+    display: block;
+    margin-bottom: 4px;
+    font-weight: bold;
+}
+
+#introForm input,
+#introForm textarea,
+#introForm select {
+    width: 100%;
+    padding: 6px;
+    margin-bottom: 8px;
+    box-sizing: border-box;
+}
+
+.courseRow {
+    display: flex;
+    gap: 6px;
+    margin-top: 6px;
+}
+
+.courseRow input {
+    flex: 1;
+}
+
+button,
+input[type='submit'],
+input[type='reset'] {
+    margin-top: 8px;
+    padding: 6px 10px;
+}

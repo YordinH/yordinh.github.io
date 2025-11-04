@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction Form</title>
+    <script src="../scripts/validator.js"></script>
+    <link rel="stylesheet" href="./default.css">
+</head>
+
+<body>
+    <header><div data-include="components/header.html"></div></header>
+
+    <main>
+        <h2>Introduction Form</h2>
+        <h3>Please submit the form below.</h3>
+
+        <form id="introForm">
+
+            <fieldset>
+                <legend>Personal Info</legend>
+
+                <label>First Name*:
+                    <input type="text" id="firstName" required value="Yordin">
+                </label>
+
+                <label>Middle Name:
+                    <input type="text" id="middleName" value="Emmanuel">
+                </label>
+
+                <label>Preferred/Nick Name:
+                    <input type="text" id="preferredName" value="Yordin">
+                </label>
+
+                <label>Last Name*:
+                    <input type="text" id="lastName" required value="Hasty">
+                </label>
+
+                <label>Acknowledgment Statement*:
+                    <input type="text" id="ackStatement" required value="I certify that this is my work.">
+                </label>
+
+                <label>Acknowledgment Date*:
+                    <input type="date" id="ackDate" required value="2024-01-01">
+                </label>
+
+                <label>Mascot Adjective*:
+                    <input type="text" id="mascotAdj" required value="Yearning">
+                </label>
+
+                <label>Mascot Animal*:
+                    <input type="text" id="mascotAnimal" required value="Hamster">
+                </label>
+
+                <label>Divider*:
+                    <input type="text" id="divider" required value="⚡">
+                </label>
+
+                <label>Picture:
+                    <input type="file" id="introImage">
+                </label>
+
+                <label>Caption*:
+                    <input type="text" id="imgCaption" required value="Me jumping for a picture in the deserts of Dubai.">
+                </label>
+
+                <label>Personal Statement*:
+                    <textarea id="personalStatement" required>Hello, my name is Yordin Hasty. I am a senior studying computer science. I am originally from Durham, NC, and transferred to UNCC my junior year. I love taking on new hobbies and challenges and am always looking for my next project.</textarea>
+                </label>
+
+                <fieldset>
+                    <legend>About Me Sections</legend>
+
+                    <label>Personal Background*:
+                        <textarea id="personalBackground" required placeholder="Tell us about your personal background">I have lived in Durham, NC almost my entire life. I was originally born in Guatemala before being adopted and brought to the US. I now live here in Charlotte.</textarea>
+                    </label>
+
+                    <label>Professional Background*:
+                        <textarea id="professionalBackground" required placeholder="Describe your work or professional experience">I have worked at Chick-fil-A since I was 18 and have transferred between store locations over the years.</textarea>
+                    </label>
+
+                    <label>Academic Background*:
+                        <textarea id="academicBackground" required placeholder="Your academic background">I earned an associate degree in engineering from Durham Tech and transferred to UNC Charlotte to study Computer Science.</textarea>
+                    </label>
+
+                    <label>Programming Background*:
+                        <textarea id="programmingBackground" required placeholder="Languages and experience">I am pursuing software engineering and have experience with HTML, CSS, JavaScript, and backend development as part of my coursework and personal projects.</textarea>
+                    </label>
+
+                    <label>Web Development Background*:
+                        <textarea id="webBackground" required placeholder="Explain your web dev experience">I taught myself HTML, CSS, and JavaScript before this course and continue to build web projects to improve my skills.</textarea>
+                    </label>
+
+                    <label>Personal Interests*:
+                        <textarea id="personalInterests" required placeholder="Hobbies, passions, interests">I love taking on new hobbies and challenges, and I spend time learning about markets, finance, and entrepreneurship.</textarea>
+                    </label>
+
+                    <label>Something Unique / Special About You*:
+                        <textarea id="uniqueThing" required placeholder="Share something unique">I co-founded a business and actively day trade. I also enjoy reading and learning about how financial systems work.</textarea>
+                    </label>
+                </fieldset>
+
+                <label>Favorite Quote*:
+                    <input type="text" id="quote" required value="&quot;Whatever the mind can conceive and believe, it can achieve.”">
+                </label>
+
+                <label>Quote Author*:
+                    <input type="text" id="quoteAuthor" required value="Napoleon Hill">
+                </label>
+
+                <label>Funny Thing (optional):
+                    <input type="text" id="funnyThing" placeholder="Tell a funny fact">
+                </label>
+
+                <label>Something I would like to share (optional):
+                    <input type="text" id="shareSomething" placeholder="Something interesting...">
+                </label>
+
+                <fieldset>
+                    <legend>Links</legend>
+
+                    <label>Link 1:
+                        <input type="url" id="link1" placeholder="https://example.com" value="https://github.com/yordinh">
+                    </label>
+
+                    <label>Link 2:
+                        <input type="url" id="link2" placeholder="https://example.com" value="https://webpages.charlotte.edu/yhasty/">
+                    </label>
+
+                    <label>Link 3:
+                        <input type="url" id="link3" placeholder="https://example.com" value="https://yordinh.github.io/">
+                    </label>
+
+                    <label>Link 4:
+                        <input type="url" id="link4" placeholder="https://example.com" value="https://www.linkedin.com/in/yordinhasty">
+                    </label>
+
+                    <label>Link 5:
+                        <input type="url" id="link5" placeholder="https://example.com" value="https://webpages.charlotte.edu/yhasty/yh.design/index.html">
+                    </label>
+                </fieldset>
+
+            </fieldset>
+
+            <fieldset id="coursesWrapper">
+                <legend>Courses</legend>
+                <div class="courseRow">
+                    <input placeholder="Dept" value="ITIS">
+                    <input placeholder="Number" value="3135">
+                    <input placeholder="Name" value="Web App Dev">
+                    <input placeholder="Reason" value="Core course">
+                </div>
+            </fieldset>
+
+            <button type="button" id="addCourseBtn">+ Add Course</button>
+
+            <br><br>
+
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+            <button type="button" id="clearBtn">Clear</button>
+        </form>
+        <div id="output"></div>
+    </main>
+
+    <footer><div data-include="components/footer.html"></div></footer>
+
+    <script src="scripts/introduction.js"></script>
+    <script src="scripts/HTMLInclude.js"></script>
+</body>
+</html>

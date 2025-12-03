@@ -1,6 +1,8 @@
 img {
     max-width: 800px;
-    
+    display: block;
+    margin: 0 auto;
+    padding: 50px, 0;
 }
 header {
     padding:20px;
